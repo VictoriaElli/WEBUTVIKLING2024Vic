@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initila-scale=1.0">
+        <title>Registreringsskjema</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1>Min Hjemmeside</h1></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Hjem</a>
+                    </li>
+                    <li>
+                        <a href="validering.html" target="_blank">Valideringsoppgaven</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontakt oss</a>
+                    </li>
+                    <li>
+                        <a href="mal.html">Nettside Mal</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+<section>
+    <h2>Registreringsskjema</h2>
+    <form> 
+        <label>Navn
+            <input type="text" placeholder="skriv navnet ditt her" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+        </label>
+        <label>Epost
+            <input type="email" placeholder="eksempel@post.no" required>
+        </label>        
+    
+        <label>Passord
+            <input type="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="pwd" name="pwd" required>
+        </label>
+       
+        <label>Alder
+            <input  type="number" min="18" max="99" required>
+        </label>
+        <label>Telefonnummer
+            <input type="tel" pattern="[0-9]{8,12}" required>
+        </label>
+        <label> 
+            Fødselsdato
+            <input type="date" max="2023-12-31" required>
+        </label>
+        <label>Kjønn</label>
+            <input type="radio" id="Mann" name="Kjønn" value="Mann" required>
+            <label for="Mann">Mann</label><br>
+            <input type="radio" id="Kvinne" name="Kjønn" value="Kvinne" required>
+            <label for="Kvinne">Kvinne</label><br>
+            <input type="radio" id="Annet" name="Kjønn" value="Annet" required>
+            <label for="Annet">Annet</label><br>
+        <label>
+            Land 
+            <select name="Land" id="land" required>
+                <option value="">Ingen</option>
+                <option value="Norge">Norge</option>
+                <option value="Sverige">Sverige</option>
+                <option value="Danmark">Danmark</option>
+            </select>
+        </label>
+        <label>
+            Personvern: 
+            <input type="checkbox" required>
+        </label>
+        <label>Send
+        <input type="submit" value="send">
+        </label>
+
+    </form>
+     
+</section>
+        </main>
+
+        <footer> 
+            <p>Kontakt meg på epost: <a href="vielling@hiof.no"> vielling@hiof.no </a></p>
+       <p> 2024 Victoria Ellingsen</p>
+        </footer>
+    </body>
+</html>
