@@ -1,6 +1,13 @@
+*{
+    box-sizing: border-box;
+
+}
+/* forsiktig bruk av *, den er universielle og velger ALLE elementene i html-en!
+    Gjør dette som det FØRSTE jeg skriver i css-et*/
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 
 img{
@@ -35,10 +42,28 @@ img{
     flex-wrap: wrap;
     gap: 1rem;
 }
+.flex-space-b h2{
+    width: 100%;
+    
+}
+.flex-space-b form label{
+    position: relative;
+}
 .flex-space-b form label{
     visibility: hidden;
+    position: absolute;
 }
 #outlet{
     color: #a52a2a;
 
 }
+.product-card {
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 10px 10px 10px 10px #efefef;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* OPPGAVE FREDAG: SKO SIDEN SKAL OPPDATERES ETTER DETTE OGSÅ!*/ 
