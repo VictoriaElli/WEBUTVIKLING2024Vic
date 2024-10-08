@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#grid-container{
+    display: grid;
+    grid-template-areas: "header header header " /* 3 ganger er antallet */
+                            "navigering navigering navigering" /* denne raden er låst til 3 kolonner siden vi satt 3 i første rad*/
+                            "main main aside"
+                            "footer footer footer";
+    /*grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto;*/
+}
+
+header{
+    background-color: rgb(56, 144, 167);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    /* Grid-area: 1(row start) / 1 / 2 / 4; -alt metode*/ 
+    
+}
+
+nav{
+    background-color: rgb(37, 45, 129);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+main{
+    background-color: rgb(149, 218, 181);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+aside{
+    background-color: rgb(23, 114, 219);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+footer{
+    background-color: rgb(104, 126, 172);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
